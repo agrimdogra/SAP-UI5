@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <!-- Bootstrap  loading UI5 Framework -->
+
+        <script  
+            src="https://ui5.sap.com/resources/sap-ui-core.js"
+            data-sap-ui-libs = "sap.m"
+            data-sap-ui-theme = "sap_fiori_3_dark"
+            data-sap-ui-resourceroots = '{ "myApp" : "./" }'>
+
+        </script>
+
+        <script>
+            var oView = new sap.ui.view({
+                id: 'idMain',
+                viewName: 'myApp.view.Main',
+                type: 'JS'
+            });
+
+
+
+            var oView2 = new sap.ui.view({
+                id: "idMain2",
+                viewName: 'myApp.view.Main2',
+                type: 'XML'
+            })
+
+            oView2.placeAt("one")
+        </script>
+
+
+    </head>
+
+    <body class="sapUiBody">
+        <div id="one">
+
+        </div>
+    </body>
+</html>

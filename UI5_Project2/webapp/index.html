@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <!-- Bootstaping  -->
+        <script
+        src = "https://ui5.sap.com/resources/sap-ui-core.js"
+        data-sap-ui-libs = "sap.m"
+        data-sap-ui-theme = "sap_fiori_3_dark"
+        data-sap-ui-bindingSyntax = "complex"
+        data-sap-ui-resourceroots = '{ "myApp2" : "./"}'>
+        </script>
+        
+        <script>
+            var oView = new sap.ui.view({
+                id   : "view1",
+                viewName : "myApp2.view.main",
+                type : "XML" 
+            })
+
+            oView.placeAt("myDiv1");
+        </script>
+
+
+    </head>
+
+    <body class="sapUiBody">
+        <div id="myDiv1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Veritatis quas consequatur incidunt sit provident ipsam nulla saepe assumenda, eos, 
+                ratione obcaecati, laborum dolorum odio non nisi porro maiores earum nihil.</p>
+        </div>
+    </body>
+</html>

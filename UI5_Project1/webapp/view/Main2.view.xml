@@ -1,0 +1,9 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="myApp.controller.main">
+
+  <Input id="inpId" width="40%" />
+  <Button text="MyButton2" press="myFun" />
+
+</mvc:View>

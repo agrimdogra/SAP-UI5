@@ -1,0 +1,32 @@
+<mvc:View 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    xmlns:f="sap.ui.layout.form"
+    controllerName="myApp2.controller.main">
+
+    <f:SimpleForm backgroundDesign="Solid" editable="true">
+        <f:content>
+            <Label required="true" text="Emp Name" vAlign="Inherit"></Label >   
+            <Input maxLength="20" width="25%" value="{/Arundhti/name}" id="name"></Input>
+            <Label required="true" text="Emp Age"></Label>   
+            <Input maxLength="20" width="25%" value="24" id="age"></Input>
+            <Label required="true" text="Emp ID"></Label>   
+            <Input maxLength="20" width="25%" value="{/Arundhti/id}" id="country"></Input>
+            <Label required="true" text="Emp Country"></Label>   
+            <Input maxLength="20" width="25%" value="{path: '/Arundhti/country'}"></Input> 
+        <Label required="true" text="Is Smoker"></Label>   
+        <Switch enabled="true" name="Smoker" state="false" type="Default" customTextOff="No" customTextOn="Yes" id="smoker"></Switch>
+        <Label ></Label>
+        <Button text="Submit" press="onPress" type="Emphasized" width="15%" id="myBtn"></Button>
+        </f:content>
+        
+    
+    
+    </f:SimpleForm>
+
+
+</mvc:View>
+
+
+
+
