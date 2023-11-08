@@ -16,7 +16,7 @@ sap.ui.define([
             var currView = this.getView();    
 
             var oModel = sap.ui.getCore().getModel();
-            oModel.setProperty("/Arundhti/name","Dograag");
+            oModel.setProperty("/Agrim/name","Dograag");
 
         }
     })

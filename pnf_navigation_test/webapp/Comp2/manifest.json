@@ -1,0 +1,87 @@
+{
+    "_version": "1.8.0",
+    "sap.app": {
+        "id": "pnfnavigationtest2",
+        "type": "component",
+        "embeddedBy": "../",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{compTitle}}",
+        "description": "{{compDescription}}"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "pnfnavigationtest.Comp2.view.Detail",
+            "type": "XML",
+            "async": true,
+            "id": "Detail"
+        },      
+        "resources": {
+            "js": [],
+            "css": []
+        },
+        "dependencies": {
+            "minUI5Version": "1.96.1",
+            "libs": {
+                "sap.ui.core": {
+                    "lazy": false
+                },
+                "sap.m": {}
+            },
+            "components": {}
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "pnfnavigationtest.Comp2.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": true
+            },
+            "routes": [
+                {
+                    "name": "App",
+                    "pattern": "",
+                    "target": [
+                        "App"
+                    ]
+                }
+            ],
+            "targets": {
+                "App": {
+                    "viewName": "Detail"
+                }
+            }
+        }
+    }
+}

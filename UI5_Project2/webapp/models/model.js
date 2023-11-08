@@ -17,8 +17,8 @@ sap.ui.define([
                         "smoker"  : false  
                     },
 
-                    "Arundhti" : {
-                        "name"    : "Arundhti Dogra",
+                    "HCM_PNF" : {
+                        "name"    : "HCM_PNF",
                         "age"     : 20,
                         "id"      : 1001,
                         "country" : "India",
